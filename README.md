@@ -52,7 +52,13 @@ $ vagrant ssh
 > For SSH connections Vagrant looks for a SSH client (`ssh.exe`) in your $PATH. This is already the case for OSX and Linux. On Windows you want to install Git for Windows for this.
 
 ## Working with your new VM
-As noted above, the included shell script `vagrant_provision.sh` installs your desired set of packages. The example i provided installs 
+As noted above, the included shell script `vagrant_provision.sh` installs your desired set of packages. The example i currently provide with the source installs the $RNS wallet. It can be started via after installation with the command: 
+
+```sh
+$ /usr/local/bin/runwallet
+``` 
+
+Have fun and stay tuned for the next entry!
 
 [Git-Homepage]: <https://github.com/git-for-windows/git/releases/latest>
 [VirtualBox-Homepage]: <https://www.virtualbox.org/wiki/Downloads>
