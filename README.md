@@ -1,4 +1,7 @@
 # My Altcoin test environment
+Corresponding blog post:
+https://medium.com/tales-from-the-crypt-o/bitcoin-altcoin-test-environment-c041508cfd02
+
 In the crazy world of crypto, there is always a new project or wallet to look into. Many of these projects are open source and can be compiled from source to try out new features. Some are binary-only and should be evaluated carefully.
 
 If this is something you do on a regular basis, you can probably make use of this short article.
