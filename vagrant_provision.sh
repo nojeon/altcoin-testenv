@@ -24,8 +24,8 @@ apt-get update && apt-get -y install wine-stable winetricks
 #
 cat > /usr/local/bin/runwallet <<'EOF'
 #!/bin/bash
-winetricks settings win7
-wget https://github.com/RenosCoin/RenosCoin/releases/download/v1.0.0.0/renoscoin-qt.zip
+winetricks settings winxp
+if [ ! -f "renoscoin-qt.exe" ]; then wget https://github.com/RenosCoin/RenosCoin/releases/download/v1.0.0.0/renoscoin-qt.zip; fi
 unzip renoscoin-qt.zip
 wine renoscoin-qt.exe
 EOF

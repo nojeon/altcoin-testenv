@@ -40,7 +40,9 @@ What happens now is a bit of DevOps magic. After a couple of minutes, the follow
 * The shell script `vagrant_provision.sh` installs our desired set of packages
 * Vagrant automatically configures a couple of useful shortcuts like a shared folder in `/vagrant` with the host system and convenient passwordless logins via SSH Keys to the VM. 
 
->         The box has 2048 MB of RAM and 2 CPU cores assigned. Change that in the `Vagrantfile` if you want more or less
+>         The box has 2048 MB of RAM and 2 CPU cores assigned. Change that in the `Vagrantfile` if you want more or less RAM/CPU.
+
+The VM windows is also shown for your convenience (Vagrant normally hides it), so you can login graphically and test e.g. graphical wallets.
 
 ## Connect to your VM
 Connecting to your VM is as easy as run a command in a terminal. You need exactly one command to connect:
