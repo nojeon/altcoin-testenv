@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
 
   # server or desktop
   #config.vm.box = "ubuntu/xenial64"
-  config.vm.box = "boxcutter/ubuntu1604-desktop"
+  config.vm.box = "fso/xenial64-desktop"
 	
   # set default ip
   config.vm.network "private_network", ip: "10.10.15.10"
