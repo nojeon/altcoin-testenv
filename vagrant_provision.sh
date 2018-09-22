@@ -19,19 +19,6 @@ add-apt-repository -y ppa:ricotz/unstable
 # update repositories
 apt-get update && apt-get -y install wine-stable winetricks
 
-# Install the RNS windows wallet for illustration purposes 
-# This crashes on 16.04 for some reason, try another win compat setting
-#
-cat > /usr/local/bin/runwallet <<'EOF'
-#!/bin/bash
-winetricks settings winxp
-if [ ! -f "renoscoin-qt.exe" ]; then wget https://github.com/RenosCoin/RenosCoin/releases/download/v1.0.0.0/renoscoin-qt.zip; fi
-unzip renoscoin-qt.zip
-wine renoscoin-qt.exe
-EOF
 
 # installer permissions
 chmod 775 /usr/local/bin/runwallet
-
-# run the wallet after installation with the following command:
-echo "run the wallet after installation with the following command: /usr/local/bin/runwallet"
